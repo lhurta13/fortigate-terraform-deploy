@@ -1,12 +1,12 @@
 # GCP region
 variable "region" {
   type    = string
-  default = "us-central1" #Default Region
+  default = "us-east4" #Default Region
 }
 # GCP zone
 variable "zone" {
   type    = string
-  default = "us-central1-a" #Default Zone
+  default = "us-east4-c" #Default Zone
 }
 # GCP project name
 variable "project" {
@@ -32,7 +32,7 @@ variable "token" {
 
 variable "image" {
   type    = string
-  default = "projects/fortigcp-project-001/global/images/fortinet-fgtondemand-767-20260604-001-w-license"
+  default = "projects/fortigcp-project-001/global/images/fortinet-fgt-767-20260604-001-w-license"
 }
 
 
@@ -48,7 +48,7 @@ variable "nictype" {
 # x86 can uses n1-standard-4
 variable "machine" {
   type    = string
-  default = "n1-standard-4"
+  default = "n2-standard-4"
 }
 # Public Subnet CIDR
 variable "public_subnet" {
